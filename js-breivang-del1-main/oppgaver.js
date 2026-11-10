@@ -120,16 +120,15 @@ console.log(lag);
 // const temp = -8. Skriv ut "Kuldegrader" hvis temp er under 0.
 // Forventet: Kuldegrader
 const temp = -8;
-if (temp < 0) {
-    console.log("Kuldegrader");
-}
+if (temp < 0) {console.log("Kuldegrader");}
 
 
 // Oppgave 11 (grunnleggende)
 // Bruk hp fra oppgave 2. Hvis hp er 0 eller mindre: "Game over".
 // Ellers: "Spillet fortsetter".
 // Forventet: Spillet fortsetter
-
+if (hp <= 0) {console.log("Game over")}
+else if (hp > 0) {console.log("Spillet fortsetter")}
 
 
 
@@ -138,6 +137,11 @@ if (temp < 0) {
 // før 10: "God morgen", før 18: "God dag", ellers: "God kveld".
 // Forventet: God kveld
 // Test også: endre klokka til 8 og kjør på nytt. Da skal det stå God morgen.
+const klokka = 21;
+if (klokka < 10) {console.log("God morgen")}
+else if (klokka < 18) {console.log("God dag")}
+else {console.log("God kveld")}
+
 
 
 // Oppgave 13 (middels)
@@ -145,6 +149,10 @@ if (temp < 0) {
 // const skydekke = 20 og const time = 22. Bruk &&.
 // Forventet: Gode sjanser for nordlys
 // Test også: skydekke = 80 skal gi: Dårlige sjanser i kveld
+const skydekke = 80;
+const time = 22;
+if (skydekke < 30 && time >= 18) {console.log("Gode sjanser for nordlys")} 
+else if (skydekke > 30) {console.log("Dårlige sjanser i kveld")}
 
 
 // Oppgave 14 (avansert)
