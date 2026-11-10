@@ -177,7 +177,7 @@ else {console.log("betaler 100 kr")}
 //            3
 //            4
 //            5
-
+for ( let i = 1; i <= 5; i++ ) { console.log(i); }
 
 // Oppgave 16 (grunnleggende)
 // En rakett skal skytes opp fra Andøya. Tell ned fra 10 til 1 med en for-løkke,
