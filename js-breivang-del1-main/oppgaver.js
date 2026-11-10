@@ -159,6 +159,10 @@ else if (skydekke > 30) {console.log("Dårlige sjanser i kveld")}
 // Billett til Fjellheisen: barn under 12 betaler 50 kr, 67 år og eldre betaler 60 kr,
 // alle andre betaler 100 kr. Lag let alder og skriv ut prisen.
 // Forventet: alder 8 -> 50 kr,  alder 30 -> 100 kr,  alder 70 -> 60 kr
+let alder = 100;
+if (alder < 12) {console.log("betaler 50 kr")}
+else if (alder >= 67) {console.log("betaler 60 kr")}
+else {console.log("betaler 100 kr")}
 
 
 // ---------------- LØKKER ----------------
