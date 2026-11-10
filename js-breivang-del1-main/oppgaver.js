@@ -181,14 +181,16 @@ for ( let i = 1; i <= 5; i++ ) { console.log(i); }
 
 // Oppgave 16 (grunnleggende)
 // En rakett skal skytes opp fra Andøya. Tell ned fra 10 til 1 med en for-løkke,
-// og skriv ut "Liftoff!" etter løkka.
+// og skriv ut c etter løkka.
 // Forventet: 10, 9, 8 ... 1 (én per linje), så Liftoff!
-
+for ( let i = 10; i >= 0; i-- ) { console.log(i); };
+console.log("Liftoff");
 
 // Oppgave 17 (middels)
 // Regn ut summen av alle tallene fra 1 til 100 med en løkke.
 // Tips: let sum = 0; før løkka.
 // Forventet: 5050
+
 
 
 // Oppgave 18 (middels)
