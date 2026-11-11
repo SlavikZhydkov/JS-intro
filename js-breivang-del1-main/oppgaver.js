@@ -31,8 +31,8 @@ console.log(firstname, lastname);
 console.log("Oppgave 2:");
 let hp = 100;
 let bjorn = -30;
-let sum = hp + bjorn;
-console.log(sum)
+//let sum = hp + bjorn;
+//console.log(sum)
 
 // Oppgave 3 (grunnleggende)
 // Lag const PI = 3.14159. Prøv deretter å skrive PI = 3; og kjør fila.
@@ -183,27 +183,32 @@ for ( let i = 1; i <= 5; i++ ) { console.log(i); }
 // En rakett skal skytes opp fra Andøya. Tell ned fra 10 til 1 med en for-løkke,
 // og skriv ut c etter løkka.
 // Forventet: 10, 9, 8 ... 1 (én per linje), så Liftoff!
-for ( let i = 10; i >= 0; i-- ) { console.log(i); };
+for ( let i = 10; i >= 1; i-- ) { console.log(i); };
 console.log("Liftoff");
 
 // Oppgave 17 (middels)
 // Regn ut summen av alle tallene fra 1 til 100 med en løkke.
 // Tips: let sum = 0; før løkka.
 // Forventet: 5050
-
-
+let sum = 0;
+for ( let i = 1; i <= 100; i++ ) { sum += i; }
+console.log(sum);
 
 // Oppgave 18 (middels)
 // Lag let bossHp = 100. Hvert slag tar 15 hp. Bruk en while-løkke og tell
 // hvor mange slag som trengs før bossHp er 0 eller mindre.
 // Forventet: 7 slag
-
+let bossHp = 100;
+let slag =0;
+while (bossHp > 0) {bossHp -=15; slag++;}
+console.log(slag, "slag")
 
 // Oppgave 19 (avansert)
 // Skriv ut tallene 1 til 15. Er tallet delelig med 3, skriv "Nord" i stedet.
 // Delelig med 5: "Lys". Delelig med både 3 og 5: "Nordlys".
 // Tips: tall % 3 === 0 betyr delelig med 3.
 // Forventet: 1, 2, Nord, 4, Lys, Nord, 7, 8, Nord, Lys, 11, Nord, 13, 14, Nordlys
+
 
 
 // ---------------- ARRAYS ----------------
