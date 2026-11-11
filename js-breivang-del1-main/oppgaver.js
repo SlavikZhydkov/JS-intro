@@ -210,7 +210,6 @@ console.log(slag, "slag")
 // Forventet: 1, 2, Nord, 4, Lys, Nord, 7, 8, Nord, Lys, 11, Nord, 13, 14, Nordlys
 
 
-
 // ---------------- ARRAYS ----------------
 // En array er en liste: const fag = ["Utvikling", "Driftstøtte"];
 //   fag[0]          første verdi (indeks starter på 0)
@@ -226,7 +225,9 @@ console.log(slag, "slag")
 // Skriv ut den første byen og hvor mange byer det er.
 // Forventet: Tromsø
 //            5
-
+const byer = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"];
+console.log(byer[0]);
+console.log(byer.length);
 
 // Oppgave 21 (grunnleggende)
 // Legg til "Hammerfest" med push, og skriv ut den siste byen og det nye antallet.
