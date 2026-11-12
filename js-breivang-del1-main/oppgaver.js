@@ -249,7 +249,14 @@ for (let i = 0; i < byer.length; i++) { console.log(byer[i]) }
 // const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
 // Tell hvor mange dager det var kaldere enn -5. Bruk for og if.
 // Forventet: 3
-
+const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
+let counter = 0;
+for (let i = 0; i < temperaturer.length; i++ ) { 
+    if (temperaturer[i] < -5) {
+        counter++;
+    }
+}
+console.log(counter);
 
 
 // Oppgave 24 (avansert)
