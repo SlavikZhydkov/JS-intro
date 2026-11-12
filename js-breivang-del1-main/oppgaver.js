@@ -49,7 +49,7 @@ console.log(PI);
 // Skriv ut prisen med moms.
 // Forventet: Pris med moms: 250 kr
 console.log("Oppgave 4");
-const MOMS = 0.25; 
+const MOMS = 0.25;
 let pris = 200;
 let division = pris * MOMS + pris
 console.log(division);
@@ -76,8 +76,8 @@ let tromso_temperature = -4; // detter er let pga temperatur sannsynlig skal end
 // Forventet: number
 //            string
 console.log("Oppgave 6");
-console.log(typeof(hp));
-console.log(typeof(firstname));
+console.log(typeof (hp));
+console.log(typeof (firstname));
 
 // Oppgave 7 (grunnleggende)
 // Bruk backticks og ${} til å skrive ut en setning med firstname og hp.
@@ -95,7 +95,7 @@ console.log(`ola har ${hp} hp`);
 let x = 5 + 5; //normalt svar
 let y = "5" + 5; //"5" compileres som tekst og +5 liges til den tekst som tall
 let z = Number("5") + 5; // funksjon Number converteter til tall og videre liges til 5  
-console.log(x,y,z);
+console.log(x, y, z);
 
 
 // Oppgave 9 (middels)
@@ -120,15 +120,15 @@ console.log(lag);
 // const temp = -8. Skriv ut "Kuldegrader" hvis temp er under 0.
 // Forventet: Kuldegrader
 const temp = -8;
-if (temp < 0) {console.log("Kuldegrader");}
+if (temp < 0) { console.log("Kuldegrader"); }
 
 
 // Oppgave 11 (grunnleggende)
 // Bruk hp fra oppgave 2. Hvis hp er 0 eller mindre: "Game over".
 // Ellers: "Spillet fortsetter".
 // Forventet: Spillet fortsetter
-if (hp <= 0) {console.log("Game over")}
-else if (hp > 0) {console.log("Spillet fortsetter")}
+if (hp <= 0) { console.log("Game over") }
+else if (hp > 0) { console.log("Spillet fortsetter") }
 
 
 
@@ -138,9 +138,9 @@ else if (hp > 0) {console.log("Spillet fortsetter")}
 // Forventet: God kveld
 // Test også: endre klokka til 8 og kjør på nytt. Da skal det stå God morgen.
 const klokka = 21;
-if (klokka < 10) {console.log("God morgen")}
-else if (klokka < 18) {console.log("God dag")}
-else {console.log("God kveld")}
+if (klokka < 10) { console.log("God morgen") }
+else if (klokka < 18) { console.log("God dag") }
+else { console.log("God kveld") }
 
 
 
@@ -151,8 +151,8 @@ else {console.log("God kveld")}
 // Test også: skydekke = 80 skal gi: Dårlige sjanser i kveld
 const skydekke = 80;
 const time = 22;
-if (skydekke < 30 && time >= 18) {console.log("Gode sjanser for nordlys")} 
-else if (skydekke > 30) {console.log("Dårlige sjanser i kveld")}
+if (skydekke < 30 && time >= 18) { console.log("Gode sjanser for nordlys") }
+else if (skydekke > 30) { console.log("Dårlige sjanser i kveld") }
 
 
 // Oppgave 14 (avansert)
@@ -160,9 +160,9 @@ else if (skydekke > 30) {console.log("Dårlige sjanser i kveld")}
 // alle andre betaler 100 kr. Lag let alder og skriv ut prisen.
 // Forventet: alder 8 -> 50 kr,  alder 30 -> 100 kr,  alder 70 -> 60 kr
 let alder = 100;
-if (alder < 12) {console.log("betaler 50 kr")}
-else if (alder >= 67) {console.log("betaler 60 kr")}
-else {console.log("betaler 100 kr")}
+if (alder < 12) { console.log("betaler 50 kr") }
+else if (alder >= 67) { console.log("betaler 60 kr") }
+else { console.log("betaler 100 kr") }
 
 
 // ---------------- LØKKER ----------------
@@ -177,13 +177,13 @@ else {console.log("betaler 100 kr")}
 //            3
 //            4
 //            5
-for ( let i = 1; i <= 5; i++ ) { console.log(i); }
+for (let i = 1; i <= 5; i++) { console.log(i); }
 
 // Oppgave 16 (grunnleggende)
 // En rakett skal skytes opp fra Andøya. Tell ned fra 10 til 1 med en for-løkke,
 // og skriv ut c etter løkka.
 // Forventet: 10, 9, 8 ... 1 (én per linje), så Liftoff!
-for ( let i = 10; i >= 1; i-- ) { console.log(i); };
+for (let i = 10; i >= 1; i--) { console.log(i); };
 console.log("Liftoff");
 
 // Oppgave 17 (middels)
@@ -191,7 +191,7 @@ console.log("Liftoff");
 // Tips: let sum = 0; før løkka.
 // Forventet: 5050
 let sum = 0;
-for ( let i = 1; i <= 100; i++ ) { sum += i; }
+for (let i = 1; i <= 100; i++) { sum += i; }
 console.log(sum);
 
 // Oppgave 18 (middels)
@@ -199,8 +199,8 @@ console.log(sum);
 // hvor mange slag som trengs før bossHp er 0 eller mindre.
 // Forventet: 7 slag
 let bossHp = 100;
-let slag =0;
-while (bossHp > 0) {bossHp -=15; slag++;}
+let slag = 0;
+while (bossHp > 0) { bossHp -= 15; slag++; }
 console.log(slag, "slag")
 
 // Oppgave 19 (avansert)
@@ -234,17 +234,22 @@ console.log(byer.length);
 // Tips: siste element er byer[byer.length - 1]
 // Forventet: Hammerfest
 //            6
-
+byer.push("Hammerfest")
+console.log(byer[5]);
+console.log(byer.length);
 
 // Oppgave 22 (middels)
 // Skriv ut alle byene med en for-løkke.
 // Forventet: Tromsø, Bodø, Alta, Harstad, Narvik, Hammerfest (én per linje)
+for (let i = 0; i < byer.length; i++) { console.log(byer[i]) }
+
 
 
 // Oppgave 23 (middels)
 // const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
 // Tell hvor mange dager det var kaldere enn -5. Bruk for og if.
 // Forventet: 3
+
 
 
 // Oppgave 24 (avansert)
