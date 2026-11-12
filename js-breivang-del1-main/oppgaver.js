@@ -265,9 +265,21 @@ console.log(counter);
 // b) Lag en ny array uten "drikk" ved å bruke en løkke og push.
 // Forventet: 3
 //            [ 'sverd', 'skjold', 'fiskestang' ]
-
+const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
+let antallDrikk = 0;
+let nyInventory = [];
+for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i] === "drikk") {
+        antallDrikk++;
+    } else {
+        nyInventory.push(inventory[i]);
+    }
+}
 
 // Oppgave 25 (avansert)
 // inventory er const, men push virker likevel. Hvorfor?
 // Skriv svaret i oppgavearket.
 // Forventet: ingenting i konsollen
+
+// const betyr at vi ikke kan bytte arrayen,
+// men vi kan legge til nye ting med push().
